@@ -1,0 +1,14 @@
+{
+ "scripts": {
+  "server": "nodemon inotebook/backend/index.js",
+  "client": "npm start --prefix inotebook",
+  "mongo": "mongod",
+  "both": "concurrently \"npm run mongo\" \"npm run server\" \"npm run client\""
+ },
+ "dependencies": {
+  "concurrently": "^9.2.1"
+ },
+ "devDependencies": {
+  "nodemon": "^3.1.14"
+ }
+}
